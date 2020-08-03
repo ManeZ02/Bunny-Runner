@@ -1,0 +1,172 @@
+{
+    "anims": [
+        {
+            "key": "hurt",
+            "type": "frames",
+            "repeat": 1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "player",
+                    "frame": "player-hurt-1"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-hurt-2"
+                }
+            ]
+        },
+        {
+            "key": "fall",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 8,
+            "frames": [
+                {
+                    "key": "player",
+                    "frame": "player-fall-1"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-fall-2"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-fall-3"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-fall-4"
+                }
+            ]
+        },
+        {
+            "key": "down",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 6,
+            "frames": [
+                {
+                    "key": "player",
+                    "frame": "player-duck-1"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-duck-2"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-duck-3"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-duck-4"
+                }
+            ]
+        },
+        {
+            "key": "jump",
+            "type": "frames",
+            "repeat": 0,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "player",
+                    "frame": "player-jump-1"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-jump-2"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-jump-3"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-jump-4"
+                }
+            ]
+        },
+        {
+            "key": "step",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 14,
+            "frames": [
+                {
+                    "key": "player",
+                    "frame": "player-skip-1"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-skip-2"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-skip-3"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-skip-4"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-skip-5"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-skip-6"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-skip-7"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-skip-8"
+                }
+            ]
+        },
+        {
+            "key": "idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 9,
+            "frames": [
+                {
+                    "key": "player",
+                    "frame": "player-idle-1"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-idle-2"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-idle-3"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-idle-4"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-idle-5"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-idle-6"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-idle-7"
+                },
+                {
+                    "key": "player",
+                    "frame": "player-idle-8"
+                }
+            ]
+        }
+    ]
+}
