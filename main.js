@@ -1,7 +1,7 @@
 import Loader from"./loader.js";
 import WorldOne from"./worldOne.js";
 import WorldTwo from"./worldTwo.js";
-
+//prueba
 const config = {
     width: 768,
     height: 432,
