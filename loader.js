@@ -6,7 +6,7 @@ class Loader extends Phaser.Scene {
 
     //loading bar
     this.load.on("complete", () => {
-      this.scene.start("WorldOne");
+      this.scene.start("Menu");
     });
     let loadingBar= this.add.graphics({
         fillStyle:{
@@ -18,7 +18,7 @@ class Loader extends Phaser.Scene {
         loadingBar.fillRect(0,this.game.renderer.height/2,this.game.renderer.width*percent,50);
     })
 
-    
+    this.load.image("ground","./assets/worlds/menu.png")
     //background
     this.load.image("bg1", "./assets/background/bg.png");
     this.load.image("bg2", "./assets/background/bg2.png");
