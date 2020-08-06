@@ -34,17 +34,28 @@ constructor(){
     this.ground.setScrollFactor(0);
 
     //bunny
-    this.player = this.physics.add.sprite(700,323, "player").setScale(2);
+    this.player = this.physics.add.sprite(768,323, "player").setScale(2);
     this.player_anim = this.cache.json.get("player_anim");
     this.anims.fromJSON(this.player_anim);
     this.player.anims.play("step");
+
+    //menu
+    this.name = this.physics.add.image(768,120,"runner").setScale(0.3);
+    this.play = this.physics.add.image(768,250, "play").setScale(0.25);
+
     
     //camera
     this.cameras.main.setBounds(300,0,this.width,0);
     this.cameras.main.startFollow(this.player);
     this.player.body.setVelocityX(200);
-    
+    this.name.body.setVelocityX(200);
+    this.play.body.setVelocityX(200);
 
+
+    this.play.setInteractive();
+    this.play.on("pointerdown",()=>{
+      this.scene.start("WorldOne");
+    })
   }
   update(){
     this.bg_1.tilePositionX = this.cameras.main.scrollX;

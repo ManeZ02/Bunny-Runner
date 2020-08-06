@@ -17,7 +17,9 @@ class Loader extends Phaser.Scene {
     this.load.on("progress", (percent) => {
         loadingBar.fillRect(0,this.game.renderer.height/2,this.game.renderer.width*percent,50);
     })
-
+    //menu
+    this.load.image("runner","./assets/name.png")
+    this.load.image("play","./assets/play.png")
     this.load.image("ground","./assets/worlds/menu.png")
     //background
     this.load.image("bg1", "./assets/background/bg.png");
