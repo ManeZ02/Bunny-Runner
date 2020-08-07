@@ -3,7 +3,9 @@ class Final extends Phaser.Scene{
   constructor(){
     super({key: "Final" });
   }
-    
+    preload(){
+      this.load.image("txt","./assets/txt.png");
+    }
     create(){
       //player
       this.physics.world.gravity.y = 0;
@@ -34,12 +36,26 @@ class Final extends Phaser.Scene{
       this.ground = this.add.tileSprite(0, 352, 768, 80, "ground");
       this.ground.setOrigin(0);
       this.ground.setScrollFactor(0);
-  
+
+      let opacity_mask= this.add.graphics({
+        fillStyle:{
+            color: 0x000000
+        }
+        
+    })
+        opacity_mask.fillRect(0,0,300000,432);
+        opacity_mask.setAlpha(0.5)
+
+        this.txt = this.physics.add.image(768,200, "txt").setScale();
       
       //camera
       this.cameras.main.setBounds(300,0,this.width,0);
       this.cameras.main.startFollow(this.player);
       this.player.body.setVelocityX(200);
+      this.txt.body.setVelocityX(200);
+
+    this.repeat = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.R);
+
       
     }
     update(){
@@ -50,7 +66,10 @@ class Final extends Phaser.Scene{
       this.bg_4.tilePositionX = this.cameras.main.scrollX * 0.09;
       this.bg_5.tilePositionX = this.cameras.main.scrollX * 0.3;
   
-      
+      if (this.repeat.isDown) {
+      this.scene.start("Menu");
+        
+      }
     }
   
   }

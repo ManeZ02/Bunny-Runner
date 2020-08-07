@@ -56,6 +56,9 @@ constructor(){
     this.play.on("pointerdown",()=>{
       this.scene.start("WorldOne");
     })
+
+    this.intro = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ENTER);
+    this.space = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
   }
   update(){
     this.bg_1.tilePositionX = this.cameras.main.scrollX;
@@ -65,7 +68,10 @@ constructor(){
     this.bg_4.tilePositionX = this.cameras.main.scrollX * 0.09;
     this.bg_5.tilePositionX = this.cameras.main.scrollX * 0.3;
 
-    
+    if(this.intro.isDown||this.space.isDown){  
+        this.scene.start("WorldOne");
+  
+      }
   }
 
 }
