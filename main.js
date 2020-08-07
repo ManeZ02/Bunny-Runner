@@ -1,5 +1,6 @@
 import Loader from"./loader.js";
 import Menu from"./menu.js"
+import Final from"./final.js"
 import WorldOne from"./worldOne.js";
 import WorldTwo from"./worldTwo.js";
 //prueba
@@ -18,6 +19,7 @@ const config = {
     scene: [
         Loader,
         Menu,
+        Final,
         WorldOne,
         WorldTwo
     ]

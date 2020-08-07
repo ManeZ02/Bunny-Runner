@@ -40,7 +40,7 @@ constructor(){
     this.player.anims.play("step");
 
     //menu
-    this.name = this.physics.add.image(768,120,"runner").setScale(0.3);
+    this.name = this.physics.add.image(768,100,"runner").setScale(0.7);
     this.play = this.physics.add.image(768,250, "play").setScale(0.25);
 
     

@@ -216,7 +216,7 @@ class WorldTwo extends Phaser.Scene {
     }
     if(this.stars==0){
     this.audio.stop();
-      this.scene.start("WorldOne");
+      this.scene.start("Final");
     }
     if(this.repeat.isDown){
     this.audio.stop();
